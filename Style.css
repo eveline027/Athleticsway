@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    background: #1F2421;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+Header {
+    flex: 1;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    background: #fff;
+    transition: 0.5s;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links ul li a {
+    position: relative;
+    color: #1F2421;
+    font-size: 15px;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.toggle {
+    display: none;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+.toggle span {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 20px;
+}
+
+ul li a span {
+    transition: 0.5s;
+    transition-delay: calc(0.05s * var(--i));
+}
+
+ul li a span:nth-child(2) {
+    position: absolute;
+    transform: translateY(35px);
+    font-size: 1.5em;
+}
+
+.icon {
+    background: #1F2421;
+}
+
+.icon ul li a {
+    color: #fff;
+}
+
+.icon ul li a span:nth-child(1) {
+    transform: translateY(-30px);
+}
+
+.icon ul li a span:nth-child(2) {
+    transform: translateY(2px);
+}
+
+Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+Section:nth-child(odd) {
+    color: #fff;
+}
+
+Section:nth-child(even) {
+    color: #FAA41A;
+    background-color: #1F2421;
+}
+
+#Main{
+    border-bottom: 10px solid #fff;
+}
+
+.image-container {
+    position: relative;
+}
+
+#Main-product {
+    background-image: linear-gradient( rgba(245, 246, 252, 0.52), rgba(7, 1, 5, 0.73)), url(Img/Product.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+#Main-category {
+    background-image: linear-gradient( rgba(245, 246, 252, 0.52), rgba(7, 1, 5, 0.73)), url(Img/Man\ On\ Field\ Running.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.main-text {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 3.5em; 
+    font-weight: bold;
+    font-family: 'Rowdies', cursive;;
+    margin: 0 auto;
+    padding: 35px;
+    width: max-content;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+
+#Card-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+#Card-product h1 {
+    font-size: 2em;
+    margin-top: 60px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    color: #FAA41A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Main img {
+    width: 100%;
+    height: auto;
+}
+
+#Category-img {
+    width: 100%;
+    height: auto;
+}
+
+#Category-h4 {
+    padding-top: 45px;
+}
+
+#About {
+    height: max-content;
+    background-color: #FAA41A;
+    flex-direction: column;
+    padding: 75px;
+    color: #fff;
+}
+
+#About h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#About h2 {
+    font-size: 32px;
+    color: #291528;
+    text-shadow: #fff 2px 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#About p {
+    font-size: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: 20px 35px;
+}
+
+#Index-shoes {
+    height: 310px;
+}
+
+.iconrow {
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    transform: rotate(-90deg);
+    justify-content: center;
+    align-items: center;
+}
+
+.diamond {
+    width: 70px;
+    height: 70px;
+    border: 2px lightblue solid;
+    display: flex;
+    background: none;
+    transform: rotate(45deg);
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.diamond a {
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    font-size: 35px;
+    color: white;
+}
+
+.diamond:hover{
+    border: 2px lightblue solid;
+    background-color: #1F2421;
+    transition: 0.5s ease-in;
+}
+
+#Foot {
+    transform: rotate(-90deg);
+}
+
+#Buy {
+    padding: 15px 30px;
+    background-color: #fff;
+    border: 2px solid #1F2421;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1F2421;
+}
+
+#Buy:hover{
+    color: #FAA41A;
+    border: 2px solid #1F2421;
+    background-color: #1F2421;
+    transition: 0.5s ease-in;
+}
+
+#Product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.card {
+    width: 280px;
+    box-shadow: 0 1px 4px 0 rgba(255, 255, 255, 0.627);
+    background-color: white;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transition: 0.5s ease-in;
+    transition-delay: 0.1s;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0px 10px;
+    background: #fff;
+    color: #FAA41A;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.container h4 {
+    padding-bottom: 10px;
+}
+
+.container p {
+    padding-bottom: 10px;
+}
+
+#Running-shoes {
+    height: 280px;
+}
+
+#Men-shirts3 {
+    width: 260px;
+    height: 280px;
+}
+
+Footer {
+    background-color: #A6A8AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 10px solid #fff;
+}
+
+Footer .box {
+    justify-content: space-between;
+    width: 60%;
+}
+
+.contact-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box h2 {
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.info {
+    position: relative;
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.info a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+#Credit {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.two-content {
+    display: flex;
+    background-color: #1F2421;
+}
+
+.left {
+    width: 25%;
+    margin-left: 4%;
+}
+
+#Left-picture{
+    width: 100%;
+    height: auto;
+}
+
+.right {
+    width: 70%; 
+}
+
+.right h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.right p {
+    font-size: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: 20px 35px;
+}
+
+/* Tablet version size */
+@media (max-width: 768px) {
+    Section .cards {
+        flex-direction: column;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .toggle i {
+        transform: rotate(0deg);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .toggle.active i {
+        transform: rotate(90deg);
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+
+    .info {
+        position: relative;
+        display: inline-flex;
+        margin: 0px auto;
+    }
+
+    .info a {
+        margin-left: 10px;
+    }
+    
+    .right h4 {
+        font-size: 20px;
+    }
+
+    .right p {
+        font-size: 16px;
+    }
+}
+
+/** Mobile version size **/
+@media (max-width: 460px) {
+    .nav-links li {
+        padding: 5px;
+    }
+
+    .logo {
+        padding-right: 245px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 2px;
+    }
+
+    .info a {
+        margin-left: 5px;
+    }
+}
